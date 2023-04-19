@@ -46,8 +46,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [3] = LAYOUT_universal(
     RGB_TOG  , RGB_M_P  , RGB_M_B  , RGB_M_R  , RGB_M_SW  , _______  ,                                        _______  , _______  , _______  , _______  , _______  , KBC_SAVE ,
-    RGB_HUI  , RGB_SAI  , RGB_VAI  , RGB_VAI  ,KC_KB_VOLUME_UP, KC_VOLU ,                                        KC_BTN4  , KC_BTN1  , KC_BTN3  , KC_BTN2 , _______  , SCRL_DVI  ,
-    RGB_HUD , RGB_SAD  , RGB_VAD  , RGB_VAD  ,KC_KB_VOLUME_DOWN, KC_VOLD,                                        KC_BTN5  , KC_LEFT  , KC_DOWN  , KC_UP   , KC_RGHT  , SCRL_DVD ,
+    RGB_HUI  , RGB_SAI  , RGB_VAI  ,KC_BRIGHTNESS_UP,KC_KB_VOLUME_UP, KC_VOLU ,                               KC_BTN4  , KC_BTN1  , KC_BTN3  , KC_BTN2 , _______  , SCRL_DVI  ,
+    RGB_HUD , RGB_SAD  , RGB_VAD  ,KC_BRIGHTNESS_DOWN,KC_KB_VOLUME_DOWN, KC_VOLD,                             KC_BTN5  , KC_LEFT  , KC_DOWN  , KC_UP   , KC_RGHT  , SCRL_DVD ,
                   KC_KB_MUTE, KC_MUTE  , _______  ,        _______  , _______  ,                   _______  , _______  , _______       , _______  , _______
   ),
   
