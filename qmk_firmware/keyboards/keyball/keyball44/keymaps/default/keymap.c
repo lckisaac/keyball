@@ -27,7 +27,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_ESC   , KC_Q     , KC_W     , KC_E     , KC_R     , KC_T     ,                                        KC_Y     , KC_U     , KC_I     , KC_O     , KC_P     , KC_MINS  ,
     KC_TAB   , KC_A     , KC_S     , KC_D     , KC_F     , KC_G     ,                                        KC_H     , KC_J     , KC_K     , KC_L     , KC_SCLN  , KC_QUOT  ,
     KC_LSFT  , KC_Z     , KC_X     , KC_C     , KC_V     , KC_B     ,                                        KC_N     , KC_M     , KC_COMM  , KC_DOT   , KC_SLSH  , KC_BSLS  ,
-              KC_LCTL,KC_LGUI,ALT_T(KC_LNG2)     ,LT(1,KC_SPC),LT(3,KC_LNG1),                  KC_BSPC,LT(2,KC_ENT), RCTL_T(KC_LNG2),     KC_RALT  , MO(1)
+              KC_LCTL,KC_LGUI,ALT_T(KC_LNG2)     ,LT(1,KC_SPC),LT(3,KC_LNG1),                  KC_BSPC,LT(2,KC_ENT), RCTL_T(KC_LNG2),     KC_RALT  , MO(3)
   ),
 
   [1] = LAYOUT_universal(
@@ -40,21 +40,21 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [2] = LAYOUT_universal(
     _______  , KC_F1    , KC_F2    , KC_F3    , KC_F4    , KC_F5   ,                                         KC_PSLS  , KC_7     , KC_8     , KC_9     , KC_0    , KC_PMNS  ,
     _______  , KC_F6    , KC_F7    , KC_F8    , KC_F9    , KC_F10  ,                                         KC_PAST  , KC_4     , KC_5     , KC_6     , KC_EQL  , KC_BSPC  ,
-    _______  , KC_F11   , KC_F12   , _______  , _______  , _______  ,                                         KC_0     , KC_1     , KC_2     , KC_3     , KC_PDOT  , KC_RSFT  ,
+    _______  , KC_F11   , KC_F12   , _______  , _______  , _______  ,                                        KC_0     , KC_1     , KC_2     , KC_3     , KC_PDOT , KC_RSFT  ,
                   _______  , _______  , _______  ,         _______  , _______  ,                   _______   , _______  , _______       , _______  , KC_ENT
   ),
 
   [3] = LAYOUT_universal(
     RGB_TOG  , RGB_M_P  , RGB_M_B  , RGB_M_R  , RGB_M_SW  , _______  ,                                        _______  , _______  , _______  , _______  , _______  , KBC_SAVE ,
-    RGB_HUI  , RGB_SAI  , RGB_VAI  ,KC_BRIGHTNESS_UP,KC_KB_VOLUME_UP, KC_VOLU ,                               KC_BTN4  , KC_BTN1  , KC_BTN3  , KC_BTN2 , _______  , SCRL_DVI  ,
-    RGB_HUD , RGB_SAD  , RGB_VAD  ,KC_BRIGHTNESS_DOWN,KC_KB_VOLUME_DOWN, KC_VOLD,                             KC_BTN5  , KC_LEFT  , KC_DOWN  , KC_UP   , KC_RGHT  , SCRL_DVD ,
-                  KC_KB_MUTE, KC_MUTE  , _______  ,        _______  , _______  ,                   _______  , _______  , _______       , _______  , _______
+    RGB_HUI  , RGB_SAI  , RGB_VAI  ,KC_BRIGHTNESS_UP, KC_VOLU  , KC_VOLU ,                               KC_BTN4  , KC_BTN1  , KC_BTN3  , KC_BTN2 , _______  , SCRL_DVI  ,
+    RGB_HUD  , RGB_SAD  , RGB_VAD  ,KC_BRIGHTNESS_DOWN, KC_VOLD  , KC_VOLD ,                             KC_BTN5  , KC_LEFT  , KC_DOWN  , KC_UP   , KC_RGHT  , SCRL_DVD ,
+                  _______  , KC_MUTE  , _______  ,        _______  , _______  ,                   _______  , _______  , _______       , _______  , _______
   ),
   
    [4] = LAYOUT_universal(
-    _______  ,  _______   , _______    , _______   , _______    , _______    ,                             _______  , _______  , _______    , _______    , _______   , _______   ,
-    _______  ,  _______ , KC_BTN2  , KC_BTN3   , KC_BTN1   , CPI_I100   ,                                     KC_BTN4  , KC_BTN1  , KC_BTN3    , KC_BTN2  , SCRL_MO  , CPI_I1K  ,
-    _______  ,  _______ , _______  , _______ , _______  , CPI_D100  ,                                         KC_BTN5  , _______  , _______  , _______  , _______  , CPI_D1K  ,
+    _______  ,  _______  , _______  , _______   , _______  , _______  ,                             _______  , _______  , _______    , _______    , _______   , _______   ,
+    _______  ,  _______  , KC_BTN2  , KC_BTN3   , KC_BTN1 , CPI_I100  ,                                     KC_BTN4  , KC_BTN1  , KC_BTN3    , KC_BTN2  , _______  , CPI_I1K  ,
+    _______  ,  _______  , _______  , _______  , _______  , CPI_D100  ,                                     KC_BTN5  , _______  , _______  , _______  , _______  , CPI_D1K  ,
                   _______  , _______ , _______  ,         _______  , _______  ,                   _______  , _______  , _______       , _______  , _______
   ),
 };
