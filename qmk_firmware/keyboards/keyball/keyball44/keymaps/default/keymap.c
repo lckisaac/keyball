@@ -27,14 +27,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_ESC   , KC_Q     , KC_W     , KC_E     , KC_R     , KC_T    ,                                      KC_Y     , KC_U     , KC_I     , KC_O    , KC_P    , KC_MINS ,
     KC_TAB   , KC_A     , KC_S     , KC_D     , KC_F     , KC_G    ,                                      KC_H     , KC_J     , KC_K     , KC_L    , KC_SCLN , KC_QUOT ,
     KC_LSFT  , KC_Z     , KC_X     , KC_C     , KC_V     , KC_B    ,                                      KC_N     , KC_M     , KC_COMM  , KC_DOT  , KC_SLSH , KC_BSLS ,
-                  KC_LCTL  ,KC_LGUI  , KC_LALT  ,   LT(1,KC_SPC) ,LT(3,KC_LNG1),                  SFT_T(KC_BSPC),LT(2,KC_ENT), RCTL_T(KC_LNG2),     KC_RALT  , MO(3)
+                  KC_LCTL  ,KC_LGUI  , KC_LALT  ,   LT(1,KC_SPC) ,LT(3,KC_LNG1),                   KC_BSPC ,LT(2,KC_ENT), RCTL_T(KC_LNG2),     KC_RALT  , MO(3)
   ),
 
   [1] = LAYOUT_universal(
     KC_GRV   , S(KC_1)  , S(KC_2) , S(KC_3)  , S(KC_4)  , S(KC_5]  ,                                     S(KC_6) , S(KC_7)  , S(KC_8) , S(KC_9)  , S(KC_0)  , KC_MINS  ,
     _______  , _______  , KC_UP   , _______  , KC_LBRC  , KC_RBRC  ,                                      KC_Q   , KC_LGUI  , KC_CAPS , G(KC_L)  , G(KC_H)  , _______  ,
     _______  , KC_LEFT  , KC_DOWN , KC_RIGHT , _______  , KC_EQL   ,                                    _______  , SGUI(4)  ,G(KC_TAB), _______  , _______  , _______  ,
-                  _______  , _______ , _______  ,         _______  , _______  ,                   KC_DEL  , KC_LANG2  , _______       , _______  , _______
+                  _______  , _______ , _______  ,         _______  , _______  ,                    KC_DEL  , KC_LANG2  , _______       , _______  , _______
   ),
 
   [2] = LAYOUT_universal(
@@ -82,7 +82,7 @@ layer_state_t layer_state_set_user(layer_state_t state) {
 
 #    include "lib/oledkit/oledkit.h"
 
-void oledkit_render_info_user(void) {
+void oledkit_render_info_user(void) { 
     keyball_oled_render_keyinfo();
     keyball_oled_render_ballinfo();
 }
