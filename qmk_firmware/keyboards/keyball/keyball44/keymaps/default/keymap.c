@@ -34,14 +34,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_GRV   , S(KC_1)  , S(KC_2) , S(KC_3)  , S(KC_4)  , S(KC_5)  ,                                     S(KC_6) , S(KC_7)  , S(KC_8) , S(KC_9)  , S(KC_0)  , KC_MINS  ,
     _______  , _______  , KC_UP   , _______  , KC_LBRC  , KC_RBRC  ,                                      KC_Q   , KC_LGUI  , KC_CAPS , G(KC_L)  , G(KC_H)  , _______  ,
     _______  , KC_LEFT  , KC_DOWN , KC_RIGHT , _______  , KC_EQL   ,                                    _______  , SGUI(4)  ,G(KC_TAB), _______  , _______  , _______  ,
-                  _______  , _______ , _______  ,         _______  , _______  ,                    KC_DEL  , KC_LANG2  , _______       , _______  , _______
+                  _______  , _______ , _______  ,         _______  , _______  ,                    KC_DEL  , KC_LNG2  , _______       , _______  , _______
   ),
 
   [2] = LAYOUT_universal(
     _______  , KC_F1    , KC_F2    , KC_F3    , KC_F4    , KC_F5   ,                                    KC_PSLS  , KC_7     , KC_8     , KC_9     , KC_0    , KC_PMNS  ,
     _______  , KC_F6    , KC_F7    , KC_F8    , KC_F9    , KC_F10  ,                                    KC_PAST  , KC_4     , KC_5     , KC_6     , KC_EQL  , KC_BSPC  ,
     _______  , KC_F11   , KC_F12   , _______  , _______  , _______ ,                                   KC_0     , KC_1     , KC_2     , KC_3     , KC_PDOT , KC_ENT   ,
-                  _______  , _______  , _______  ,         _______  , _______  ,                   _______   , _______  , _______       , _______  , ________
+                  _______  , _______  , _______  ,         _______  , _______  ,                   _______   , _______  , _______       , _______  , _______
   ),
 
   [3] = LAYOUT_universal(
