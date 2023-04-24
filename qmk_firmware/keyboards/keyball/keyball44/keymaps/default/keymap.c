@@ -31,7 +31,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [1] = LAYOUT_universal(
-    KC_GRV   , S(KC_1)  , S(KC_2) , S(KC_3)  , S(KC_4)  , S(KC_5]  ,                                     S(KC_6) , S(KC_7)  , S(KC_8) , S(KC_9)  , S(KC_0)  , KC_MINS  ,
+    KC_GRV   , S(KC_1)  , S(KC_2) , S(KC_3)  , S(KC_4)  , S(KC_5)  ,                                     S(KC_6) , S(KC_7)  , S(KC_8) , S(KC_9)  , S(KC_0)  , KC_MINS  ,
     _______  , _______  , KC_UP   , _______  , KC_LBRC  , KC_RBRC  ,                                      KC_Q   , KC_LGUI  , KC_CAPS , G(KC_L)  , G(KC_H)  , _______  ,
     _______  , KC_LEFT  , KC_DOWN , KC_RIGHT , _______  , KC_EQL   ,                                    _______  , SGUI(4)  ,G(KC_TAB), _______  , _______  , _______  ,
                   _______  , _______ , _______  ,         _______  , _______  ,                    KC_DEL  , KC_LANG2  , _______       , _______  , _______
@@ -81,8 +81,6 @@ layer_state_t layer_state_set_user(layer_state_t state) {
 #ifdef OLED_ENABLE
 
 #    include "lib/oledkit/oledkit.h"
-    
-};
 
 void oledkit_render_info_user(void) { 
     keyball_oled_render_keyinfo();
