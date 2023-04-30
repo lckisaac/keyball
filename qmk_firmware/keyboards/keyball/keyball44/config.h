@@ -46,8 +46,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define SPLIT_TRANSACTION_IDS_KB KEYBALL_GET_INFO, KEYBALL_GET_MOTION, KEYBALL_SET_CPI
 
-#define MASTER_RIGHT
-
 #ifndef IOS_DEVICE_ENABLE
   // USB_MAX_POWER_CONSUMPTION value for this keyboard
   #define USB_MAX_POWER_CONSUMPTION 400
